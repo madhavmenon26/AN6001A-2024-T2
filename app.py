@@ -5,7 +5,6 @@ import os
 import google.generativeai as genai
 
 api = os.getenv("makersuite")
-#api = 'AIzaSyDYUYKnpcBrWP8BSAKWIZEhAFOdnuSW28E'
 app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"]) #send to and recieve from frontend
