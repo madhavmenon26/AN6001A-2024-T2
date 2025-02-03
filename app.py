@@ -39,6 +39,10 @@ def GenAI_result():
     r = model.generate_content(q)
     return(render_template("GenAI_result.html",r=r.text))
 
+@app.route("/paynow",methods=["GET","POST"]) #send to and recieve from frontend
+def paynow(): 
+    return(render_template("paynow.html"))
+
 if __name__ == "__main__":
     app.run()
     #app.run(port=1111) #code to run on a different port
