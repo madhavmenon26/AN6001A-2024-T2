@@ -76,7 +76,7 @@
             const web3 = new Web3(Web3.givenProvider);
             const contract = new web3.eth.Contract(contractABI, contractAddress);
             async function transfer() {
-                const account = await web3.eth.requestAccounts();
+                const accounts = await web3.eth.requestAccounts();
                 const payer = document.getElementById('payer').value;
                 const payee = document.getElementById('payee').value;
                 const amount = document.getElementById('amount').value;
